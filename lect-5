@@ -1,0 +1,103 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a=4;
+    int b=6;
+    cout<<"a^b = "<<(a^b)<<endl;
+    cout<<"a|b = "<<(a|b)<<endl;
+      cout<<"a&b = "<<(a&b)<<endl;
+        cout<<"~a = "<<(~a)<<endl;
+        
+        int i=7;
+        cout << (++i)<<endl;
+        cout << (i++)<<endl;
+        cout << (--i)<<endl;
+        cout << (i--)<<endl;
+        
+        int l,k=1;
+        l=10;
+        if(++l)
+        cout<<k;
+        else
+        cout<<++b;
+        
+        cout<<endl;
+        int x=1;
+        int y=2;
+        if(x-- > 0 && ++y>2){
+            cout<<"Stage 1, Inside if";
+        }
+        
+        else{
+            cout<<"stage 2, Inside else";
+        }
+        cout<<endl;
+        cout<<x<<" "<<y<<endl;
+        
+        int number=3;
+        cout<<(25*(++number))<<endl;
+        
+        
+        int o=1;
+        int p=o++;//1,2
+        int q=++o;//3,3
+        cout<<p<<endl;//1
+        cout<<q<<endl;//3
+        
+        
+        int n;
+        cout<<"Enter the value of n "<<endl;
+        cin>>n;
+        for(int i=1;i<=n;i++){
+            cout<<i<<endl;
+        }
+        
+        int nn;
+        cout<<"enter nn "<<endl;
+        cin>>nn;
+        int sum=0;
+        for(int w=1;w<=nn;w++){
+            sum+=w;
+        }
+    cout<<sum<<endl;
+    
+    int nnn=10;
+    int s=0;
+    int t=1;
+    cout<<s<<" "<<t<<" ";
+    for(int u=1;u<=nnn;u++){
+        int fibo=s+t;
+        cout<<fibo<<" ";
+        
+        s=t;
+        t=fibo;
+        
+    }
+    cout<<endl;
+    //prime num
+    int n4;
+    cout<<"enter the value of n4 "<<endl;
+    cin>>n4;
+    bool isprime=1;
+    for(int f=2;f<n4;f++){
+        if(n4%f==0){
+            isprime=0;
+            break;
+        }
+    }
+    if(isprime==0){
+        cout<<"not a prime number"<<endl;
+    }
+    else{
+        cout<<"prime number"<<endl;
+    }
+    return 0;
+   /* cout<<endl;
+    
+    for(int i=0;i<=5;i++){
+        cout<<i<<" ";
+        i++;
+    }*/
+}
