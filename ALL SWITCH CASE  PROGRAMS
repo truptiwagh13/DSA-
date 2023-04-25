@@ -1,0 +1,67 @@
+/*/*// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+   /* char ch='1';
+    cout<<endl;
+    switch(ch)
+    {
+    case 1: cout<<"First"<<endl;
+            break;
+    case '1':cout<<"first char"<<endl;
+             break;
+    default:cout<<"this is the default case";
+}
+cout<<endl;*/
+
+/*int a,b;
+cout<<"Enter the value of a: "<<endl;
+cin>>a;
+cout<<"Enter the value of b: "<<endl;
+cin>>b;
+char op;
+
+cout<<"which operation u want to perform : "<<endl;
+cin>>op;
+
+switch(op){
+    case '+':cout<<(a+b);
+           break;
+     case '-':cout<<(a-b);
+           break;
+     case '*':cout<<(a*b);
+           break;
+    case '/':cout<<(a/b);
+           break; 
+   default:cout<<"wrong operation";
+}
+
+
+*/
+
+    int amount;
+    cin>>amount;
+    for(int i=1;i<=4;i++)
+    {
+        switch(i){
+            int newa;
+            case 1:cout<<"100 rupee note req : "<<amount/100<<endl;
+                    newa=amount%100;
+                    break;
+            case 2:cout<<"50 rupee note req : "<<newa/50<<endl;
+                    newa=newa%50;
+                    break;
+            case 3:cout<<"20 rupee note req : "<<newa/20<<endl;
+                    newa=newa%20;
+                    break;
+            case 4:cout<<"1 rupee note req : "<<newa<<endl;
+                     break;                     
+        }
+    }
+      
+        
+    
+return 0;
+}
