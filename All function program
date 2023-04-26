@@ -1,0 +1,59 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+/*int power(int a,int b){
+      int ans=1;
+      for(int i=1;i<=b;i++){
+          ans=ans*a;
+      }
+      return ans;
+  }
+*/
+
+bool isprime(int n)
+{
+    for(int i=2;i<n;i++)
+    {
+        if(n%i==0)
+        {
+            return 0;
+      }
+   }
+   return 1;
+}  
+
+
+int main() {
+    // Write C++ code here
+  /*  int a,b;
+    cin>>a>>b;
+    cout<<endl;
+    int ans=1;
+    for(int i=1;i<=b;i++){
+        ans=ans*a;
+        
+    }
+    cout<<"answer is "<<ans<<endl;
+  */
+  
+  //pow pgm using function
+  
+ /*int a,b;
+ cin>>a>>b;
+ power(a,b);
+ 
+
+ 
+ */
+  //prime number using funcrion
+
+ int n;
+ cin>>n;
+ if(isprime(n)){
+     cout<<"is a prime number";
+ }
+ else{
+     cout<<"not a prime number";
+ }
+ return 0;
+}
